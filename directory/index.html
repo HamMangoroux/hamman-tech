@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 <head><!-- hexo injector head_begin start --><link href="https://cdn.jsdelivr.net/npm/hexo-widget-tree@0.2.3/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end -->
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/hamman-tech/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/hamman-tech/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/hamman-tech/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/hamman-tech/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/hamman-tech/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"hammangoroux.github.io","root":"/hamman-tech/","images":"/hamman-tech/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/hamman-tech/js/config.js" defer></script>
+
     <meta name="description" content="Select a directory below to expand my documentation and writeups:  📁 CTF        📁 KalmarCTF          📄 Astralogy Partial Writeup             📁 HobbyOS    📄 Motivation and Rough Planning">
 <meta property="og:type" content="article">
 <meta property="og:title" content="&#x2F;Home&#x2F;lucas&#x2F;workspace">
@@ -17,199 +31,184 @@
 <meta property="article:modified_time" content="2026-05-24T08:01:22.653Z">
 <meta property="article:author" content="Lucas Huang">
 <meta name="twitter:card" content="summary">
-    
-    
-      
-        
-          <link rel="shortcut icon" href="/hamman-tech/images/favicon.png">
-        
-      
-      
-      
-    
-    <!-- title -->
-    <title>/Home/lucas/workspace</title>
-    <!-- async scripts -->
-    <!-- Google Analytics -->
 
 
-    <!-- Umami Analytics -->
+<link rel="canonical" href="https://hammangoroux.github.io/hamman-tech/directory/">
 
 
-    <!-- styles -->
-    
-<link rel="stylesheet" href="/hamman-tech/css/style.css">
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":"","permalink":"https://hammangoroux.github.io/hamman-tech/directory/","path":"directory/","title":"/Home/lucas/workspace"}</script>
 
-    <!-- persian styles -->
-    
-    <!-- rss -->
-    
-    
-      <link rel="alternate" href="/hamman-tech/true" title="Lucas&#39;s Technical Blog" type="application/atom+xml" />
-    
-	<!-- mathjax -->
-	
-		<script type="text/x-mathjax-config">
-		  MathJax.Hub.Config({
-			tex2jax: {
-			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-			  inlineMath: [['$','$']]
-			}
-		  });
-		</script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
-	
-<!-- hexo injector head_end start -->
-  <style>
-    /* 1. Global Reset to wipe out the top white bar or border artifacts */
-    html, body, .widget-tree-sidebar, #widget-tree {
-      border-top: none !important;
-      margin-top: 0 !important;
-    }
-
-    /* 2. Downsize the sidebar & blend it with the Cactus theme background */
-    .widget-tree-sidebar, 
-    #widget-tree {
-      width: 220px !important;
-      height: 100vh !important;
-      background-color: #1d1f21 !important;   /* Matches Cactus dark gray */
-      border-right: 1px dashed #333 !important;
-      border-top: none !important;
-      box-shadow: none !important;
-      padding: 30px 15px !important;
-      box-sizing: border-box !important;
-      font-size: 13px !important;
-      transition: transform 0.3s ease !important; /* Retains the native slide animation */
-    }
-
-    /* Keep text visible and clean inside the tree layout */
-    .widget-tree-sidebar a,
-    .widget-tree-sidebar span,
-    .widget-tree-sidebar li {
-      color: #c9c9c9 !important;
-      text-decoration: none !important;
-    }
-    .widget-tree-sidebar a:hover {
-      color: #2bbc7d !important;
-    }
-
-    /* 3. Clean up the floating toggle button styles */
-    .widget-tree-btn {
-      background-color: #1d1f21 !important;
-      color: #2bbc7d !important;
-      border: 1px solid #333 !important;
-      border-top: none !important;
-      box-shadow: none !important;
-      transition: left 0.3s ease, transform 0.3s ease !important;
-    }
-
-    /* 4. THE NO-SKEW FIX: Shift the layout context, leaving text parameters completely untouched */
-    @media (min-width: 900px) {
-      body {
-        transition: padding-left 0.3s ease !important;
-        padding-left: 0 !important;
-      }
-      /* When the sidebar is toggled open, smoothly indent the canvas. 
-         Cactus will auto-center perfectly in the remaining space without clipping! */
-      body.sidebar-open {
-        padding-left: 220px !important; 
-      }
-    }
-  </style>
-  <!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head>
-
-<body class="max-width mx-auto px3 ltr">
-    
-      <div id="header-post">
-  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-        <!--
-       --><li><a href="/hamman-tech/">Home</a></li><!--
-     --><!--
-       --><li><a href="/hamman-tech/archives/">archives</a></li><!--
-     -->
-      </ul>
-    </span>
-    <br/>
-    <span id="actions">
-      <ul>
-        
-        <li><a class="icon" aria-label="Previous post" href="/hamman-tech/CTF/KalmarCTF/Astralogy_Partial_Writeup/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
-        
-        
-        <li><a class="icon" aria-label="Next post" href="/hamman-tech/HobbyOS/Motivation_and_rough_planning/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
-        
-        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">Previous post</span>
-      <span id="i-next" class="info" style="display:none;">Next post</span>
-      <span id="i-top" class="info" style="display:none;">Back to top</span>
-      <span id="i-share" class="info" style="display:none;">Share post</span>
-    </span>
-    <br/>
-    <div id="share" style="display: none">
-      <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://hammangoroux.github.io/hamman-tech/directory/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://hammangoroux.github.io/hamman-tech/directory/&text=/Home/lucas/workspace"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://hammangoroux.github.io/hamman-tech/directory/&title=/Home/lucas/workspace"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://hammangoroux.github.io/hamman-tech/directory/&is_video=false&description=/Home/lucas/workspace"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=/Home/lucas/workspace&body=Check out this article: https://hammangoroux.github.io/hamman-tech/directory/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://hammangoroux.github.io/hamman-tech/directory/&title=/Home/lucas/workspace"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://hammangoroux.github.io/hamman-tech/directory/&title=/Home/lucas/workspace"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://hammangoroux.github.io/hamman-tech/directory/&title=/Home/lucas/workspace"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://hammangoroux.github.io/hamman-tech/directory/&title=/Home/lucas/workspace"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://hammangoroux.github.io/hamman-tech/directory/&name=/Home/lucas/workspace&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://hammangoroux.github.io/hamman-tech/directory/&t=/Home/lucas/workspace"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-    
-    
-  </span>
-</div>
-
-    
-    <div class="content index py4 ">
-        
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    
-    <h1 class="posttitle p-name" itemprop="name headline">
-        /Home/lucas/workspace
-    </h1>
-
-
-
-    <div class="meta">
-      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span class="p-name" itemprop="name">Lucas Huang</span>
-      </span>
-      
-    <div class="postdate">
-      
-        <time datetime="2026-05-24T04:00:00.000Z" class="dt-published" itemprop="datePublished">05-24-2026</time>
-        
-        (Updated: <time datetime="2026-05-24T08:01:22.653Z" class="dt-updated" itemprop="dateModified">05-24-2026</time>)
-        
-      
-    </div>
-
-
-      
-
-      
-
-    </div>
-  </header>
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>/Home/lucas/workspace | Lucas's Technical Blog</title>
   
 
-  <div class="content e-content" itemprop="articleBody">
-    <p>Select a directory below to expand my documentation and writeups:</p>
+
+
+
+
+
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="https://cdnjs.cloudflare.com/ajax/libs/ribbon.js/1.0.2/ribbon.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/hamman-tech/js/utils.js" defer></script><script src="/hamman-tech/js/motion.js" defer></script><script src="/hamman-tech/js/sidebar.js" defer></script><script src="/hamman-tech/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/hamman-tech/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/hamman-tech/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Lucas's Technical Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Lucas Huang</p>
+  <div class="site-description" itemprop="description">Hi, this is my (hamman) techincal blog where I mainly discuss events in cybersecurity, post writeups for ethical hacking competitions (CTF), or general computing-adjacent topics.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/hamman-tech/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://hammangoroux.github.io/hamman-tech/directory/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/hamman-tech/images/avatar.gif">
+      <meta itemprop="name" content="Lucas Huang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lucas's Technical Blog">
+      <meta itemprop="description" content="Hi, this is my (hamman) techincal blog where I mainly discuss events in cybersecurity, post writeups for ethical hacking competitions (CTF), or general computing-adjacent topics.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="&#x2F;Home&#x2F;lucas&#x2F;workspace | Lucas's Technical Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          /Home/lucas/workspace
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 05-24-2026 12:00:00 / Modified: 16:01:22" itemprop="dateCreated datePublished" datetime="2026-05-24T12:00:00+08:00">05-24-2026</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>Select a directory below to expand my documentation and writeups:</p>
 <details open>
 <summary>📁 <b>CTF</b></summary>
 <div style="padding-left: 20px; margin-top: 5px; border-left: 1px dashed #444;">
@@ -239,187 +238,93 @@
 
 <hr>
 
-  </div>
-</article>
-
-
-
-        
-          <div id="footer-post-container">
-  <div id="footer-post">
-
-    <div id="nav-footer" style="display: none">
-      <ul>
-        
-          <li><a href="/hamman-tech/">Home</a></li>
-        
-          <li><a href="/hamman-tech/archives/">archives</a></li>
-        
-      </ul>
     </div>
 
     
     
+    
 
-    <div id="share-footer" style="display: none">
-      <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://hammangoroux.github.io/hamman-tech/directory/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://hammangoroux.github.io/hamman-tech/directory/&text=/Home/lucas/workspace"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://hammangoroux.github.io/hamman-tech/directory/&title=/Home/lucas/workspace"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://hammangoroux.github.io/hamman-tech/directory/&is_video=false&description=/Home/lucas/workspace"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=/Home/lucas/workspace&body=Check out this article: https://hammangoroux.github.io/hamman-tech/directory/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://hammangoroux.github.io/hamman-tech/directory/&title=/Home/lucas/workspace"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://hammangoroux.github.io/hamman-tech/directory/&title=/Home/lucas/workspace"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://hammangoroux.github.io/hamman-tech/directory/&title=/Home/lucas/workspace"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://hammangoroux.github.io/hamman-tech/directory/&title=/Home/lucas/workspace"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://hammangoroux.github.io/hamman-tech/directory/&name=/Home/lucas/workspace&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://hammangoroux.github.io/hamman-tech/directory/&t=/Home/lucas/workspace"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
-</ul>
+    <footer class="post-footer">
 
-    </div>
-
-    <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
         
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
-    </div>
 
-  </div>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/hamman-tech/HobbyOS/Motivation_and_rough_planning/" rel="prev" title="Motivation and Rough Planning">
+                  <i class="fa fa-angle-left"></i> Motivation and Rough Planning
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/hamman-tech/CTF/KalmarCTF/Post_Competition_Thoughts/" rel="next" title="Post Competition Thoughts">
+                  Post Competition Thoughts <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
 </div>
 
-        
-        <footer id="footer">
-  <div class="footer-left">
-    Copyright &copy;
-    
-    
-    2026
-    Lucas Huang
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Lucas Huang</span>
   </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-        <!--
-       --><li><a href="/hamman-tech/">Home</a></li><!--
-     --><!--
-       --><li><a href="/hamman-tech/archives/">archives</a></li><!--
-     -->
-      </ul>
-    </nav>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
   </div>
-</footer>
 
     </div>
-    <!-- styles -->
-
-
-
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
-
-
-    <!-- jquery -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
-
-
-
-
-<!-- clipboard -->
+  </footer>
 
   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
-  
-  <script type="text/javascript">
-  $(function() {
-    // copy-btn HTML
-    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
-    btn += '<i class="fa-regular fa-clone"></i>';
-    btn += '</span>';
-    // mount it!
-    $(".highlight table").before(btn);
-    var clip = new ClipboardJS('.btn-copy', {
-      text: function(trigger) {
-        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
-      }
-    });
-    clip.on('success', function(e) {
-      e.trigger.setAttribute('aria-label', "Copied!");
-      e.clearSelection();
-    })
-  })
-  </script>
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
 
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
-<script src="/hamman-tech/js/main.js"></script>
-
-<!-- search -->
-
-<!-- Baidu Analytics -->
-
-<!-- Cloudflare Analytics -->
-
-<!-- Disqus Comments -->
-
-<!-- utterances Comments -->
-
-<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-widget-tree@0.2.3/js/index.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const sidebar = document.querySelector('.widget-tree-sidebar') || document.getElementById('widget-tree');
-      const btn = document.querySelector('.widget-tree-btn');
-      
-      if (!sidebar || !btn) return;
-
-      // Evaluates whether the sidebar is currently visible on the screen layout
-      function syncSidebarState() {
-        const rect = sidebar.getBoundingClientRect();
-        if (rect.right > 0) {
-          document.body.classList.add('sidebar-open');
-        } else {
-          document.body.classList.remove('sidebar-open');
-        }
-      }
-
-      // DEFAULT TO ON: If it initializes hidden, programmatically click it open
-      setTimeout(() => {
-        const rect = sidebar.getBoundingClientRect();
-        if (rect.right <= 0) {
-          btn.click(); 
-        }
-        syncSidebarState();
-      }, 200);
-
-      // TOGGLABLE INTERACTION: Re-calculate alignment perfectly when clicking the button
-      btn.addEventListener('click', () => {
-        setTimeout(syncSidebarState, 350); // Wait for the 300ms slide transition to finish
-      });
-
-      // AUTOMATION WATCHER: Listens for any internal state changes driven by the plugin
-      const observer = new MutationObserver(syncSidebarState);
-      observer.observe(sidebar, { attributes: true, attributeFilter: ['style', 'class'] });
-    });
-  </script>
-  <div id="widget-tree">
+<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-widget-tree@0.2.3/js/index.js"></script><div id="widget-tree">
       <ul>
-      <li class="tree-list-item">
-        <i class="toggle-post-icon gg-folder-add"></i>
-        <a class="tree-list-link" href="/hamman-tech/categories/CTF/">
-          CTF
-        </a>
-      <span class="tree-list-count">1</span><ul class="tree-list-children">
-      <li class="tree-list-item">
-        <i class="toggle-post-icon gg-folder-add"></i>
-        <a class="tree-list-link" href="/hamman-tech/categories/CTF/KalmarCTF/">
-          KalmarCTF
-        </a>
-      <span class="tree-list-count">1</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/hamman-tech/CTF/KalmarCTF/Astralogy_Partial_Writeup/" title="Astralogy - KalmarCTF"><i class="post-icon gg-file-document"></i>Astralogy - KalmarCTF</a></li></ul></li></ul></li>
       <li class="tree-list-item">
         <i class="toggle-post-icon gg-folder-add"></i>
         <a class="tree-list-link" href="/hamman-tech/categories/HobbyOS/">
           HobbyOS
         </a>
-      <span class="tree-list-count">1</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/hamman-tech/HobbyOS/Motivation_and_rough_planning/" title="Motivation and Rough Planning"><i class="post-icon gg-file-document"></i>Motivation and Rough Planning</a></li></ul></li></ul>
+      <span class="tree-list-count">1</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/hamman-tech/HobbyOS/Motivation_and_rough_planning/" title="Motivation and Rough Planning"><i class="post-icon gg-file-document"></i>Motivation and Rough Planning</a></li></ul></li>
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/hamman-tech/categories/CTF/">
+          CTF
+        </a>
+      <span class="tree-list-count">2</span><ul class="tree-list-children">
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/hamman-tech/categories/CTF/KalmarCTF/">
+          KalmarCTF
+        </a>
+      <span class="tree-list-count">2</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/hamman-tech/CTF/KalmarCTF/Astralogy_Partial_Writeup/" title="Astralogy"><i class="post-icon gg-file-document"></i>Astralogy</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/hamman-tech/CTF/KalmarCTF/Post_Competition_Thoughts/" title="Post Competition Thoughts"><i class="post-icon gg-file-document"></i>Post Competition Thoughts</a></li></ul></li></ul></li></ul>
         <div id="widget-tree-button">
           <i class="gg-chevron-right"></i>
         </div>
