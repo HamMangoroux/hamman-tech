@@ -59,22 +59,28 @@
 	
 <!-- hexo injector head_end start -->
   <style>
-    /* Shrink the sidebar and match the dark Cactus aesthetic */
-    .widget-tree-sidebar, 
-    #widget-tree {
-      width: 220px !important;              /* Makes it smaller */
-      height: 100vh !important;
-      background-color: #1d1f21 !important;   /* Matches Cactus background */
-      border-right: 1px dashed #333 !important;
-      border-top: none !important;            /* Destroys the white bar at the top */
-      box-shadow: none !important;            /* Removes weird lines/shadows */
-      padding: 30px 15px !important;
-      box-sizing: border-box !important;
-      font-size: 13px !important;             /* Smaller font size */
-      transition: transform 0.3s ease !important; /* Smooth sliding animation */
+    /* 1. Global Reset to wipe out the top white bar or border artifacts */
+    html, body, .widget-tree-sidebar, #widget-tree {
+      border-top: none !important;
+      margin-top: 0 !important;
     }
 
-    /* Fix text and folder link visibility inside the sidebar */
+    /* 2. Downsize the sidebar & blend it with the Cactus theme background */
+    .widget-tree-sidebar, 
+    #widget-tree {
+      width: 220px !important;
+      height: 100vh !important;
+      background-color: #1d1f21 !important;   /* Matches Cactus dark gray */
+      border-right: 1px dashed #333 !important;
+      border-top: none !important;
+      box-shadow: none !important;
+      padding: 30px 15px !important;
+      box-sizing: border-box !important;
+      font-size: 13px !important;
+      transition: transform 0.3s ease !important; /* Retains the native slide animation */
+    }
+
+    /* Keep text visible and clean inside the tree layout */
     .widget-tree-sidebar a,
     .widget-tree-sidebar span,
     .widget-tree-sidebar li {
@@ -85,36 +91,27 @@
       color: #2bbc7d !important;
     }
 
-    /* Style the floating toggle button gracefully */
+    /* 3. Clean up the floating toggle button styles */
     .widget-tree-btn {
-      border: none !important;
-      background: #222 !important;
+      background-color: #1d1f21 !important;
       color: #2bbc7d !important;
+      border: 1px solid #333 !important;
+      border-top: none !important;
       box-shadow: none !important;
-      border-top: none !important;            /* Double checks top line removal */
-      z-index: 10000 !important;
+      transition: left 0.3s ease, transform 0.3s ease !important;
     }
 
-    /* DYNAMIC LAYOUT SHIFT: Only move the blog content if the sidebar is open */
+    /* 4. THE NO-SKEW FIX: Shift the layout context, leaving text parameters completely untouched */
     @media (min-width: 900px) {
-      body.sidebar-layout-open .content, 
-      body.sidebar-layout-open #header, 
-      body.sidebar-layout-open #footer {
-        margin-left: 250px !important;       /* Clean alignment next to the 220px bar */
-        max-width: 750px !important;
-        transition: margin-left 0.3s ease, max-width 0.3s ease !important;
+      body {
+        transition: padding-left 0.3s ease !important;
+        padding-left: 0 !important;
       }
-      
-      /* Smoothly transition back to center when the sidebar is hidden */
-      .content, #header, #footer {
-        transition: margin-left 0.3s ease, max-width 0.3s ease !important;
+      /* When the sidebar is toggled open, smoothly indent the canvas. 
+         Cactus will auto-center perfectly in the remaining space without clipping! */
+      body.sidebar-open {
+        padding-left: 220px !important; 
       }
-    }
-    
-    /* Clean up any potential native body border artifacts */
-    html, body {
-      border-top: none !important;
-      padding-top: 0 !important;
     }
   </style>
   <!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head>
@@ -166,6 +163,54 @@
     <div class="meta">
       
         
+          <time datetime="2026-05-24T15:29:53.741Z" class="dt-published" itemprop="datePublished">05-24-2026</time>
+        
+      
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/hamman-tech/CTF/KalmarCTF/Post_Competition_Thoughts/">Post Competition Thoughts</a>
+    
+
+
+</span>
+      </li>
+    
+      
+      
+      
+      
+      <li class="post-item">
+        
+    <div class="meta">
+      
+        
+          <time datetime="2026-05-24T15:23:10.487Z" class="dt-published" itemprop="datePublished">05-24-2026</time>
+        
+      
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/hamman-tech/CTF/KalmarCTF/Astralogy_Partial_Writeup/">Astralogy - KalmarCTF</a>
+    
+
+
+</span>
+      </li>
+    
+      
+      
+      
+      
+      <li class="post-item">
+        
+    <div class="meta">
+      
+        
           <time datetime="2026-05-24T04:00:00.000Z" class="dt-published" itemprop="datePublished">05-24-2026</time>
         
       
@@ -199,30 +244,6 @@
         <span>
     
         <a class="" href="/hamman-tech/HobbyOS/Motivation_and_rough_planning/">Motivation and Rough Planning</a>
-    
-
-
-</span>
-      </li>
-    
-      
-      
-      
-      
-      <li class="post-item">
-        
-    <div class="meta">
-      
-        
-          <time datetime="2026-05-18T17:44:47.195Z" class="dt-published" itemprop="datePublished">05-19-2026</time>
-        
-      
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/hamman-tech/CTF/KalmarCTF/Astralogy_Partial_Writeup/">Astralogy - KalmarCTF</a>
     
 
 
@@ -294,51 +315,37 @@
       
       if (!sidebar || !btn) return;
 
-      // Detects if the sidebar is visually open on the screen
-      function isSidebarOpen() {
-        const style = window.getComputedStyle(sidebar);
-        const transform = style.transform;
-        
-        if (transform === 'none') return true;
-        const matrix = transform.match(/^matrix\\((.+)\\)$/);
-        if (matrix) {
-          const translateX = parseFloat(matrix[1].split(',')[4]);
-          return translateX >= 0;
-        }
-        return true;
-      }
-
-      // Appends or removes layout rules to prevent content from looking skewed
-      function syncLayout() {
-        if (isSidebarOpen()) {
-          document.body.classList.add('sidebar-layout-open');
+      // Evaluates whether the sidebar is currently visible on the screen layout
+      function syncSidebarState() {
+        const rect = sidebar.getBoundingClientRect();
+        if (rect.right > 0) {
+          document.body.classList.add('sidebar-open');
         } else {
-          document.body.classList.remove('sidebar-layout-open');
+          document.body.classList.remove('sidebar-open');
         }
       }
 
-      // DEFAULT TO ON: If it boots up closed, programmatically click it open
+      // DEFAULT TO ON: If it initializes hidden, programmatically click it open
       setTimeout(() => {
-        if (!isSidebarOpen()) {
-          btn.click();
+        const rect = sidebar.getBoundingClientRect();
+        if (rect.right <= 0) {
+          btn.click(); 
         }
-        syncLayout();
-      }, 150);
+        syncSidebarState();
+      }, 200);
 
-      // TOGGLABLE FUNCTIONALITY: Sync alignment perfectly when clicking the button
+      // TOGGLABLE INTERACTION: Re-calculate alignment perfectly when clicking the button
       btn.addEventListener('click', () => {
-        setTimeout(syncLayout, 50); // Small delay to let the plugin complete its slide
+        setTimeout(syncSidebarState, 350); // Wait for the 300ms slide transition to finish
       });
+
+      // AUTOMATION WATCHER: Listens for any internal state changes driven by the plugin
+      const observer = new MutationObserver(syncSidebarState);
+      observer.observe(sidebar, { attributes: true, attributeFilter: ['style', 'class'] });
     });
   </script>
   <div id="widget-tree">
       <ul>
-      <li class="tree-list-item">
-        <i class="toggle-post-icon gg-folder-add"></i>
-        <a class="tree-list-link" href="/hamman-tech/categories/HobbyOS/">
-          HobbyOS
-        </a>
-      <span class="tree-list-count">1</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/hamman-tech/HobbyOS/Motivation_and_rough_planning/" title="Motivation and Rough Planning"><i class="post-icon gg-file-document"></i>Motivation and Rough Planning</a></li></ul></li>
       <li class="tree-list-item">
         <i class="toggle-post-icon gg-folder-add"></i>
         <a class="tree-list-link" href="/hamman-tech/categories/CTF/">
@@ -350,7 +357,13 @@
         <a class="tree-list-link" href="/hamman-tech/categories/CTF/KalmarCTF/">
           KalmarCTF
         </a>
-      <span class="tree-list-count">1</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/hamman-tech/CTF/KalmarCTF/Astralogy_Partial_Writeup/" title="Astralogy - KalmarCTF"><i class="post-icon gg-file-document"></i>Astralogy - KalmarCTF</a></li></ul></li></ul></li></ul>
+      <span class="tree-list-count">1</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/hamman-tech/CTF/KalmarCTF/Astralogy_Partial_Writeup/" title="Astralogy - KalmarCTF"><i class="post-icon gg-file-document"></i>Astralogy - KalmarCTF</a></li></ul></li></ul></li>
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/hamman-tech/categories/HobbyOS/">
+          HobbyOS
+        </a>
+      <span class="tree-list-count">1</span><ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/hamman-tech/HobbyOS/Motivation_and_rough_planning/" title="Motivation and Rough Planning"><i class="post-icon gg-file-document"></i>Motivation and Rough Planning</a></li></ul></li></ul>
         <div id="widget-tree-button">
           <i class="gg-chevron-right"></i>
         </div>
