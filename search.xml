@@ -1,40 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>/Home/lucas/workspace</title>
-    <url>/hamman-tech/directory/</url>
-    <content><![CDATA[<p>Select a directory below to expand my documentation and writeups:</p>
-<details open>
-<summary>📁 <b>CTF</b></summary>
-<div style="padding-left: 20px; margin-top: 5px; border-left: 1px dashed #444;">
-
-  <details>
-  <summary>📁 <b>KalmarCTF</b></summary>
-  <div style="padding-left: 20px; margin-top: 5px;">
-    
-<ul>
-<li>📄 <a href="/hamman-tech/CTF/KalmarCTF/Astralogy_Partial_Writeup/">Astralogy Partial Writeup</a></li>
-</ul>
-  </div>
-  </details>
-
-</div>
-</details>
-
-<details>
-<summary>📁 <b>HobbyOS</b></summary>
-<div style="padding-left: 20px; margin-top: 5px; border-left: 1px dashed #444;">
-
-<ul>
-<li>📄 <a href="/hamman-tech/HobbyOS/Motivation_and_rough_planning/">Motivation and Rough Planning</a></li>
-</ul>
-</div>
-</details>
-
-<hr>
-]]></content>
-  </entry>
-  <entry>
     <title>Astralogy</title>
     <url>/hamman-tech/CTF/KalmarCTF/Astralogy_Partial_Writeup/</url>
     <content><![CDATA[<h1 id="Astralogy-KalmarCTF"><a href="#Astralogy-KalmarCTF" class="headerlink" title="Astralogy - KalmarCTF"></a>Astralogy - KalmarCTF</h1><blockquote>
