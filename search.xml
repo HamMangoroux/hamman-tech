@@ -37,6 +37,7 @@
 <h4 id="The-next-part-of-the-hardening-is-this"><a href="#The-next-part-of-the-hardening-is-this" class="headerlink" title="The next part of the hardening is this:"></a>The next part of the hardening is this:</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">diff --git a/kernel-src/sys/syscalls/pread.c b/kernel-src/sys/syscalls/pread.c</span><br><span class="line">index 09964e8..3edfb6e 100644</span><br><span class="line">--- a/kernel-src/sys/syscalls/pread.c</span><br><span class="line">+++ b/kernel-src/sys/syscalls/pread.c</span><br><span class="line">@@ -10,6 +10,11 @@ syscallret_t syscall_pread(context_t *context, int fd, void *buffer, size_t size</span><br><span class="line"> 		.ret = -1</span><br><span class="line"> 	&#125;;</span><br><span class="line"> </span><br><span class="line">+	if (IS_USER_ADDRESS(buffer) == false) &#123;</span><br><span class="line">+		ret.errno = EFAULT;</span><br><span class="line">+		return ret;</span><br><span class="line">+	&#125;</span><br><span class="line">+</span><br><span class="line"> 	file_t *file = fd_get(fd);</span><br><span class="line"> </span><br><span class="line"> 	if (file == NULL || (file-&gt;flags &amp; FILE_READ) == 0) &#123;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
+        <category>Competitions</category>
         <category>CTF</category>
         <category>KalmarCTF</category>
       </categories>
@@ -50,6 +51,7 @@
 <p>Point is, I learned some things about CPU flags and some specific registers that I didn’t previously know. Also, seeing the AstralOS also made me realize that hobby operating systems were possible. Nothing happened in this one, but I’ll still keep it around in this blog just to reminisce at and maybe eventually I’ll be good enough to actually get a placement in this CTF competition.</p>
 ]]></content>
       <categories>
+        <category>Competitions</category>
         <category>CTF</category>
         <category>KalmarCTF</category>
       </categories>
@@ -72,8 +74,8 @@
 </ul>
 ]]></content>
       <categories>
-        <category>HobbyOS</category>
         <category>Projects</category>
+        <category>HobbyOS</category>
       </categories>
   </entry>
 </search>
