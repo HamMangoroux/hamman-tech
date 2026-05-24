@@ -61,22 +61,47 @@
 	
 <!-- hexo injector head_end start -->
   <style>
-    /* 1. Lock the sidebar wide open and shrink its size */
-    .widget-tree-sidebar {
-      transform: translateX(0) !important;
-      width: 210px !important;      /* Shrinks the width down */
-      font-size: 13px !important;   /* Shrinks the font size */
+    /* 1. Force the sidebar to be visible, small, and locked to the left side */
+    .widget-tree-sidebar, 
+    #widget-tree {
+      position: fixed !important;
+      left: 0 !important;
+      top: 0 !important;
+      width: 220px !important;          /* Keeps it nice and small */
+      height: 100vh !important;
+      transform: translateX(0) !important; /* Prevents it from sliding away */
+      visibility: visible !important;
+      opacity: 1 !important;
+      display: block !important;
+      background-color: #1d1f21 !important; /* Matches the dark Cactus background */
+      border-right: 1px dashed #333 !important;
+      padding: 40px 20px !important;
+      box-sizing: border-box !important;
+      font-size: 13px !important;       /* Makes the font smaller */
+      z-index: 9999 !important;
+    }
+
+    /* 2. Force the text inside the tree to be readable (white/light grey) */
+    .widget-tree-sidebar a,
+    .widget-tree-sidebar span,
+    .widget-tree-sidebar li {
+      color: #c9c9c9 !important;
+      text-decoration: none !important;
+    }
+    .widget-tree-sidebar a:hover {
+      color: #2bbc7d !important;
     }
     
-    /* 2. Hide the floating layout button since it's permanently open */
+    /* 3. Hide the annoying floating toggle button */
     .widget-tree-btn {
       display: none !important;
     }
 
-    /* 3. Shift the Cactus theme content slightly right so they don't collide */
+    /* 4. Shift the Cactus theme content cleanly so it aligns with the new sidebar */
     @media (min-width: 900px) {
       .content, #header, #footer {
-        margin-left: 260px !important;
+        margin-left: 260px !important; /* Aligns perfectly next to the 220px sidebar */
+        max-width: 800px !important;
       }
     }
   </style>
@@ -325,7 +350,7 @@
 
 <!-- utterances Comments -->
 
-<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-widget-tree@0.2.3/js/index.js"></script><style>#widget-tree-button{opacity:0}</style><div id="widget-tree">
+<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-widget-tree@0.2.3/js/index.js"></script><div id="widget-tree">
       <ul>
       <li class="tree-list-item">
         <i class="toggle-post-icon gg-folder-add"></i>
