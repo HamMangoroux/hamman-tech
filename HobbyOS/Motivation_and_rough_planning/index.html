@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Initial RemarksEven though this is a bit off topic, this is pretty much my first actual post on this blog. I know the KalmarCTF one was before this but I made that thing a while ago so this is my firs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Motivation and Rough Planning">
+<meta property="og:url" content="https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/index.html">
+<meta property="og:site_name" content="Lucas&#39;s Technical Blog">
+<meta property="og:description" content="Initial RemarksEven though this is a bit off topic, this is pretty much my first actual post on this blog. I know the KalmarCTF one was before this but I made that thing a while ago so this is my firs">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-05-23T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-05-24T07:33:45.683Z">
+<meta property="article:author" content="Lucas Huang">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/hamman-tech/images/favicon.png">
+        
+      
+      
+      
+    
+    <!-- title -->
+    <title>Motivation and Rough Planning</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/hamman-tech/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/hamman-tech/true" title="Lucas&#39;s Technical Blog" type="application/atom+xml" />
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/hamman-tech/">Home</a></li><!--
+     --><!--
+       --><li><a href="/hamman-tech/ctf/">ctf</a></li><!--
+     --><!--
+       --><li><a href="/hamman-tech/archives/">archives</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/hamman-tech/CTF/KalmarCTF/Astralogy_Partial_Writeup/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&text=Motivation and Rough Planning"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&title=Motivation and Rough Planning"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&is_video=false&description=Motivation and Rough Planning"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Motivation and Rough Planning&body=Check out this article: https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&title=Motivation and Rough Planning"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&title=Motivation and Rough Planning"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&title=Motivation and Rough Planning"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&title=Motivation and Rough Planning"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&name=Motivation and Rough Planning&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&t=Motivation and Rough Planning"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Initial-Remarks"><span class="toc-number">1.</span> <span class="toc-text">Initial Remarks</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Motivations"><span class="toc-number">2.</span> <span class="toc-text">Motivations</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Rough-Plan"><span class="toc-number">3.</span> <span class="toc-text">Rough Plan</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Vision"><span class="toc-number">4.</span> <span class="toc-text">Vision</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Final-Stuff"><span class="toc-number">5.</span> <span class="toc-text">Final Stuff</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Homework"><span class="toc-number">5.1.</span> <span class="toc-text">Homework</span></a></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Motivation and Rough Planning
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Lucas Huang</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2026-05-23T16:00:00.000Z" class="dt-published" itemprop="datePublished">05-24-2026</time>
+        
+        (Updated: <time datetime="2026-05-24T07:33:45.683Z" class="dt-updated" itemprop="dateModified">05-24-2026</time>)
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h1 id="Initial-Remarks"><a href="#Initial-Remarks" class="headerlink" title="Initial Remarks"></a>Initial Remarks</h1><p>Even though this is a bit off topic, this is pretty much my first actual post on this blog. I know the KalmarCTF one was before this but I made that thing a while ago so this is my first post made FOR this blog. It’s also the first project I’ll be fully documenting on this blog. Also, sorry if this post isn’t very structured. I’m still new to writing these blog posts. I’m sure I’ll get better at it as I make more posts.</p>
+<h1 id="Motivations"><a href="#Motivations" class="headerlink" title="Motivations"></a>Motivations</h1><p>Alright guys, so I’ve known about LFS(Linux From Scratch) and BLFS(Beyong LFS) for quite a bit and since I’m also planning this summer to configure and move to Gentoo as my daily drive on my main laptop, I was just like hmmmmm, what if I also just made a fun LFS build just to learn a bit more about how linux works. Later on, I realized that I could make it a bit polished with BLFS and swaywm to it and rice it a little to make it a full hobby distro. </p>
+<p>After brainstorming it a bit, I thought that it would be cool that since I’m interested in cybersecurity and specifically pwn and rev, to just make a minimal linux distro with some tools and stuff already made. I’m sure somebody else has already done this type of stuff, but it’s really just for my understanding of linux and also to have some fun with it. </p>
+<p>That is literally the entire reason why I’m doing this lmaoooo💀💀. Maybe I’ll think of some more grand reason later on when I finish the distro and make a page for it.</p>
+<h1 id="Rough-Plan"><a href="#Rough-Plan" class="headerlink" title="Rough Plan"></a>Rough Plan</h1><p>I already finished making the html pages for LFS and BLFS(holy shit it is long). As you can tell from the top, this post is made on May 24 and I really only plan on actually following the LFS and stuff in the Summer. I also got exams as well, so I’ll only be able to actually do stuff once school ends. From now till then, I’ll just try to read over the LFS to get a good idea of what it is doing. </p>
+<p>Later, I’ll configure the LFS first by following the guide. As of now, I still don’t know jack about how it’s going to go so I can’t really say any specific thing but I’ll just follow the LFS to get a base CLI distro then I’ll follow the BLFS to get a swaywm thing on top. I honestly can NOT bother with GNOME or KDE stuff. I have a feeling that the apps and dependencies that come with those would kill me before I make a full distro. </p>
+<p>After the initial configuration, I’ll make that into an iso to understand how that process works. </p>
+<p>Then, I’ll go back and this time, I’ll diverge from the main LFS guide and install OPENRC as my init. Probably with some help from some AI and random geniuses in Discord groups I’m in.</p>
+<h1 id="Vision"><a href="#Vision" class="headerlink" title="Vision"></a>Vision</h1><p>So the vision is to obviously have a minimal distro with a minimal riced swaymd and a bunch of security features in the distro turned on. The init system will be OPENRC in the end and it’ll also come with some pwn and rev tools such as <code>gef</code> or <code>ghidra</code> or <code>binary ninja</code>. </p>
+<h1 id="Final-Stuff"><a href="#Final-Stuff" class="headerlink" title="Final Stuff"></a>Final Stuff</h1><p>I really have no idea how big of a project I’m getting myself into but I’m pretty exicted to get started. Yuuhhhhh, in these projects, I’ll also try to give myself some listed homework at the bottom to just keep myself on track. </p>
+<h3 id="Homework"><a href="#Homework" class="headerlink" title="Homework"></a>Homework</h3><ul>
+<li>Skim through LFS and BLFS guide to get a rough idea</li>
+</ul>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/hamman-tech/">Home</a></li>
+        
+          <li><a href="/hamman-tech/ctf/">ctf</a></li>
+        
+          <li><a href="/hamman-tech/archives/">archives</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Initial-Remarks"><span class="toc-number">1.</span> <span class="toc-text">Initial Remarks</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Motivations"><span class="toc-number">2.</span> <span class="toc-text">Motivations</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Rough-Plan"><span class="toc-number">3.</span> <span class="toc-text">Rough Plan</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Vision"><span class="toc-number">4.</span> <span class="toc-text">Vision</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Final-Stuff"><span class="toc-number">5.</span> <span class="toc-text">Final Stuff</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Homework"><span class="toc-number">5.1.</span> <span class="toc-text">Homework</span></a></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&text=Motivation and Rough Planning"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&title=Motivation and Rough Planning"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&is_video=false&description=Motivation and Rough Planning"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Motivation and Rough Planning&body=Check out this article: https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&title=Motivation and Rough Planning"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&title=Motivation and Rough Planning"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&title=Motivation and Rough Planning"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&title=Motivation and Rough Planning"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&name=Motivation and Rough Planning&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://hammangoroux.github.io/hamman-tech/HobbyOS/Motivation_and_rough_planning/&t=Motivation and Rough Planning"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2026
+    Lucas Huang
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/hamman-tech/">Home</a></li><!--
+     --><!--
+       --><li><a href="/hamman-tech/ctf/">ctf</a></li><!--
+     --><!--
+       --><li><a href="/hamman-tech/archives/">archives</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/hamman-tech/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
