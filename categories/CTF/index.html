@@ -57,7 +57,28 @@
 		</script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 	
-<meta name="generator" content="Hexo 8.1.2"></head>
+<!-- hexo injector head_end start -->
+  <style>
+    /* 1. Lock the sidebar wide open and shrink its size */
+    .widget-tree-sidebar {
+      transform: translateX(0) !important;
+      width: 210px !important;      /* Shrinks the width down */
+      font-size: 13px !important;   /* Shrinks the font size */
+    }
+    
+    /* 2. Hide the floating layout button since it's permanently open */
+    .widget-tree-btn {
+      display: none !important;
+    }
+
+    /* 3. Shift the Cactus theme content slightly right so they don't collide */
+    @media (min-width: 900px) {
+      .content, #header, #footer {
+        margin-left: 260px !important;
+      }
+    }
+  </style>
+  <!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head>
 
 <body class="max-width mx-auto px3 ltr">
     
