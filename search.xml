@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Astralogy</title>
-    <url>/hamman-tech/CTF/KalmarCTF/Astralogy_Partial_Writeup/</url>
+    <url>/hamman-tech/Competitions/CTF/KalmarCTF/Astralogy_Partial_Writeup/</url>
     <content><![CDATA[<h1 id="Astralogy-KalmarCTF"><a href="#Astralogy-KalmarCTF" class="headerlink" title="Astralogy - KalmarCTF"></a>Astralogy - KalmarCTF</h1><blockquote>
 <p>Astralogy - 216 Points<br>Pwn&#x2F;Binary Exploitation<br>Current Date: 2&#x2F;28&#x2F;2026</p>
 </blockquote>
@@ -43,7 +43,7 @@
   </entry>
   <entry>
     <title>Post Competition Thoughts</title>
-    <url>/hamman-tech/CTF/KalmarCTF/Post_Competition_Thoughts/</url>
+    <url>/hamman-tech/Competitions/CTF/KalmarCTF/Post_Competition_Thoughts/</url>
     <content><![CDATA[<h1 id="Hmmmmmmm…"><a href="#Hmmmmmmm…" class="headerlink" title="Hmmmmmmm…."></a>Hmmmmmmm….</h1><p>Ok so I’m actually writing this a couple of months after the competition and all I can say is that I didn’t walk into the competition very confident and I finished learning stuff.</p>
 <p>I knew that KalmarCTF was going to be extremely hard and this is the competition I decided to do right after PicoCTF(which is a high school competition). I pretty much <em>only</em> joined to experience something extremely hard. Safe to say I absolutely experienced that. </p>
 <p>I was also traveling abroad and didn’t have a lot of time to focus on the competition, so that’s another lousy excuse for you.</p>
@@ -56,7 +56,7 @@
   </entry>
   <entry>
     <title>Motivation and Rough Planning</title>
-    <url>/hamman-tech/HobbyOS/Motivation_and_rough_planning/</url>
+    <url>/hamman-tech/Projects/HobbyOS/Motivation_and_rough_planning/</url>
     <content><![CDATA[<h1 id="Initial-Remarks"><a href="#Initial-Remarks" class="headerlink" title="Initial Remarks"></a>Initial Remarks</h1><p>Even though this is a bit off topic, this is pretty much my first actual post on this blog. I know the KalmarCTF one was before this but I made that thing a while ago so this is my first post made FOR this blog. It’s also the first project I’ll be fully documenting on this blog. Also, sorry if this post isn’t very structured. I’m still new to writing these blog posts. I’m sure I’ll get better at it as I make more posts.</p>
 <h1 id="Motivations"><a href="#Motivations" class="headerlink" title="Motivations"></a>Motivations</h1><p>Alright guys, so I’ve known about LFS(Linux From Scratch) and BLFS(Beyong LFS) for quite a bit and since I’m also planning this summer to configure and move to Gentoo as my daily drive on my main laptop, I was just like hmmmmm, what if I also just made a fun LFS build just to learn a bit more about how linux works. Later on, I realized that I could make it a bit polished with BLFS and swaywm to it and rice it a little to make it a full hobby distro. </p>
 <p>After brainstorming it a bit, I thought that it would be cool that since I’m interested in cybersecurity and specifically pwn and rev, to just make a minimal linux distro with some tools and stuff already made. I’m sure somebody else has already done this type of stuff, but it’s really just for my understanding of linux and also to have some fun with it. </p>
@@ -73,6 +73,7 @@
 ]]></content>
       <categories>
         <category>HobbyOS</category>
+        <category>Projects</category>
       </categories>
   </entry>
 </search>
