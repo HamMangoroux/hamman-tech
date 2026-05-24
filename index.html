@@ -59,27 +59,22 @@
 	
 <!-- hexo injector head_end start -->
   <style>
-    /* 1. Force the sidebar to be visible, small, and locked to the left side */
+    /* Shrink the sidebar and match the dark Cactus aesthetic */
     .widget-tree-sidebar, 
     #widget-tree {
-      position: fixed !important;
-      left: 0 !important;
-      top: 0 !important;
-      width: 220px !important;          /* Keeps it nice and small */
+      width: 220px !important;              /* Makes it smaller */
       height: 100vh !important;
-      transform: translateX(0) !important; /* Prevents it from sliding away */
-      visibility: visible !important;
-      opacity: 1 !important;
-      display: block !important;
-      background-color: #1d1f21 !important; /* Matches the dark Cactus background */
+      background-color: #1d1f21 !important;   /* Matches Cactus background */
       border-right: 1px dashed #333 !important;
-      padding: 40px 20px !important;
+      border-top: none !important;            /* Destroys the white bar at the top */
+      box-shadow: none !important;            /* Removes weird lines/shadows */
+      padding: 30px 15px !important;
       box-sizing: border-box !important;
-      font-size: 13px !important;       /* Makes the font smaller */
-      z-index: 9999 !important;
+      font-size: 13px !important;             /* Smaller font size */
+      transition: transform 0.3s ease !important; /* Smooth sliding animation */
     }
 
-    /* 2. Force the text inside the tree to be readable (white/light grey) */
+    /* Fix text and folder link visibility inside the sidebar */
     .widget-tree-sidebar a,
     .widget-tree-sidebar span,
     .widget-tree-sidebar li {
@@ -89,18 +84,37 @@
     .widget-tree-sidebar a:hover {
       color: #2bbc7d !important;
     }
-    
-    /* 3. Hide the annoying floating toggle button */
+
+    /* Style the floating toggle button gracefully */
     .widget-tree-btn {
-      display: none !important;
+      border: none !important;
+      background: #222 !important;
+      color: #2bbc7d !important;
+      box-shadow: none !important;
+      border-top: none !important;            /* Double checks top line removal */
+      z-index: 10000 !important;
     }
 
-    /* 4. Shift the Cactus theme content cleanly so it aligns with the new sidebar */
+    /* DYNAMIC LAYOUT SHIFT: Only move the blog content if the sidebar is open */
     @media (min-width: 900px) {
-      .content, #header, #footer {
-        margin-left: 260px !important; /* Aligns perfectly next to the 220px sidebar */
-        max-width: 800px !important;
+      body.sidebar-layout-open .content, 
+      body.sidebar-layout-open #header, 
+      body.sidebar-layout-open #footer {
+        margin-left: 250px !important;       /* Clean alignment next to the 220px bar */
+        max-width: 750px !important;
+        transition: margin-left 0.3s ease, max-width 0.3s ease !important;
       }
+      
+      /* Smoothly transition back to center when the sidebar is hidden */
+      .content, #header, #footer {
+        transition: margin-left 0.3s ease, max-width 0.3s ease !important;
+      }
+    }
+    
+    /* Clean up any potential native body border artifacts */
+    html, body {
+      border-top: none !important;
+      padding-top: 0 !important;
     }
   </style>
   <!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head>
@@ -295,7 +309,52 @@
 
 <!-- utterances Comments -->
 
-<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-widget-tree@0.2.3/js/index.js"></script><div id="widget-tree">
+<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-widget-tree@0.2.3/js/index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const sidebar = document.querySelector('.widget-tree-sidebar') || document.getElementById('widget-tree');
+      const btn = document.querySelector('.widget-tree-btn');
+      
+      if (!sidebar || !btn) return;
+
+      // Detects if the sidebar is visually open on the screen
+      function isSidebarOpen() {
+        const style = window.getComputedStyle(sidebar);
+        const transform = style.transform;
+        
+        if (transform === 'none') return true;
+        const matrix = transform.match(/^matrix\\((.+)\\)$/);
+        if (matrix) {
+          const translateX = parseFloat(matrix[1].split(',')[4]);
+          return translateX >= 0;
+        }
+        return true;
+      }
+
+      // Appends or removes layout rules to prevent content from looking skewed
+      function syncLayout() {
+        if (isSidebarOpen()) {
+          document.body.classList.add('sidebar-layout-open');
+        } else {
+          document.body.classList.remove('sidebar-layout-open');
+        }
+      }
+
+      // DEFAULT TO ON: If it boots up closed, programmatically click it open
+      setTimeout(() => {
+        if (!isSidebarOpen()) {
+          btn.click();
+        }
+        syncLayout();
+      }, 150);
+
+      // TOGGLABLE FUNCTIONALITY: Sync alignment perfectly when clicking the button
+      btn.addEventListener('click', () => {
+        setTimeout(syncLayout, 50); // Small delay to let the plugin complete its slide
+      });
+    });
+  </script>
+  <div id="widget-tree">
       <ul>
       <li class="tree-list-item">
         <i class="toggle-post-icon gg-folder-add"></i>
