@@ -1668,3 +1668,97 @@ code {
 #header-post #actions {
   direction: ltr !important;
 }
+/* Custom Search Modal Window */
+.search-modal {
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.55); /* Lightened overlay for a subtle dark tint */
+  display: flex;
+  align-items: center; /* Dead center vertically */
+  justify-content: center; /* Dead center horizontally */
+}
+.search-modal-content {
+  background: #1d1f21; /* Matches standard Cactus terminal color */
+  border: 1px solid #333;
+  padding: 25px;
+  width: 90%;
+  max-width: 650px;
+  border-radius: 4px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  margin: 0 auto; /* Keeps it locked strictly to the center */
+}
+.search-modal-title {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #2bbc8a; /* Classic Cactus Green Accent */
+}
+.close-search-btn {
+  color: #666;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+}
+.close-search-btn:hover {
+  color: #2bbc8a;
+}
+/* Input form element */
+.popup-search-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  background: #151718;
+  border: 1px solid #444;
+  color: #fff;
+  font-family: monospace;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.popup-search-input:focus {
+  outline: none;
+  border-color: #2bbc8a;
+}
+/* Search results feed styling */
+.popup-search-result-container {
+  max-height: 45vh; /* Tweaked slightly so it doesn't clip off-screen when centered */
+  overflow-y: auto;
+}
+.search-result-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.search-result-list li {
+  padding: 12px 0;
+  border-bottom: 1px dashed #333;
+}
+.search-result-title {
+  font-weight: bold;
+  color: #2bbc8a !important;
+  text-decoration: none;
+}
+.search-result-title:hover {
+  text-decoration: underline;
+}
+.search-result-preview {
+  font-size: 0.85rem;
+  color: #999;
+  margin: 5px 0 0 0;
+  line-height: 1.4;
+}
+.search-keyword {
+  color: #f58e90; /* Soft red highlighting matching compilers */
+  font-style: normal;
+  background: rgba(245,142,144,0.1);
+  padding: 0 2px;
+}
+.no-results {
+  color: #666;
+  font-size: 0.9rem;
+}

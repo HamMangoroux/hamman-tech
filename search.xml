@@ -1,12 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Actual Plan</title>
+    <url>/hamman-tech/Projects/HobbyOS/Actual_Plan/</url>
+    <content><![CDATA[<h1 id="Meaning"><a href="#Meaning" class="headerlink" title="Meaning"></a>Meaning</h1><p>This post is supposed to be the actual planning webpage. I will be updating this page and maybe adding more details I realized needed more time or whatever. I’ll split it into phases so that the stuff is clear. I won’t predict how long I’ll finish but I will write down when I start that phase and when I end up finishing.</p>
+<h1 id="Phase-1-Reading-Initial-Setup"><a href="#Phase-1-Reading-Initial-Setup" class="headerlink" title="Phase 1 - Reading &amp; Initial Setup"></a>Phase 1 - Reading &amp; Initial Setup</h1><h2 id="Plan-Update"><a href="#Plan-Update" class="headerlink" title="Plan Update:"></a>Plan Update:</h2><p>2026-05-25: This phase is just reading the LFS guide and getting a good idea. This phase will be pretty slow and it’s just to give me an idea of how things will be like. I also can’t do too much because my school’s finals are approaching so I gotta LOCK IN on those. I’ll just be reading the guides on the bus or something (Lies, I’ll be sleeping on the bus). </p>
+<h2 id="Complete"><a href="#Complete" class="headerlink" title="Complete:"></a>Complete:</h2><ol>
+<li>Finish reading the LFS guide.</li>
+<li>Look over relevent areas of BLFS (way too long and a lot of it is KDE or GNOME).</li>
+<li>Ask around the discord and other communities for common issues</li>
+<li>Finish eSSD partition setup and get environment ready.</li>
+</ol>
+<h1 id="Phase-2-Simple-Linux-CLI-Setup-Sysvinit"><a href="#Phase-2-Simple-Linux-CLI-Setup-Sysvinit" class="headerlink" title="Phase 2 - Simple Linux CLI Setup (Sysvinit)"></a>Phase 2 - Simple Linux CLI Setup (Sysvinit)</h1><p>2026-05-25: In this phase, I’ll just be following the LFS and complete my build of a very minimal linux setup. This setup will be using Sysvinit although in later phases, we will change that over to OpenRC. I’ll add more content to this once I start with the date stamp.</p>
+<h2 id="Complete-1"><a href="#Complete-1" class="headerlink" title="Complete:"></a>Complete:</h2><ol>
+<li>Use the LFS guide to configure simple CLI Linux base setup.</li>
+</ol>
+<h1 id="Phase-3-Simple-BLFS"><a href="#Phase-3-Simple-BLFS" class="headerlink" title="Phase 3 - Simple BLFS"></a>Phase 3 - Simple BLFS</h1><p>2026-05-25: So in this one we just add a couple base apps along with SwayWM. Again, I really don’t have a good idea of what I’ll be doing in this step so yeah… I’ll be adding to this section though. </p>
+<h2 id="Complete-2"><a href="#Complete-2" class="headerlink" title="Complete:"></a>Complete:</h2><ol>
+<li>Make Simple GUI</li>
+<li>Simple tools (i.e. gef, nvim, ghidra)</li>
+</ol>
+<h1 id="Phase-4-RICE-FIELDS"><a href="#Phase-4-RICE-FIELDS" class="headerlink" title="Phase 4 - RICE FIELDS"></a>Phase 4 - RICE FIELDS</h1><p>2026-05-25: In this step, I’ll be making it look all pretty and stuff. A lot of the configs are already in my other setups so I’ll just copy it over and maybe using CSS to do some custom stuff. I’ll try not to go overboard. This is supposed to be a simple distro.</p>
+<h2 id="Complete-3"><a href="#Complete-3" class="headerlink" title="Complete:"></a>Complete:</h2><ol>
+<li>Riced applications and desktop environment</li>
+<li>Custom keybinds</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Projects</category>
+        <category>HobbyOS</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>lfs</tag>
+        <tag>project</tag>
+        <tag>hobbyos</tag>
+        <tag>planning</tag>
+        <tag>distro</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LFS_Book_Copy</title>
     <url>/hamman-tech/Projects/HobbyOS/LFS_Book_Copy/</url>
     <content><![CDATA[<h1 id="Meaning"><a href="#Meaning" class="headerlink" title="Meaning"></a>Meaning</h1><p>WHATEVER IS THE MEANING FOR THIS POST. Uh it’s really more for me than anything, but I’m keeping a copy of the guides I’m following in my website. Also just to document every part of the project and stuff. YUH. </p>
 <p><a href="/hamman-tech/Linux_From_Scratch_Books/LFS-BOOK.html">LFS Guide</a><br><a href="/hamman-tech/Linux_From_Scratch_Books/blfs-book.html">BLFS Guide</a></p>
 <blockquote>
-<p>[!NOTE]<br>The guides <em>ARE</em> going to be outdated and this copy is simply for ME and also to documentation.<br>If you click in, the very top shows when that guide was made.</p>
+<p>The guides <em>ARE</em> going to be outdated and this copy is simply for ME and also to documentation.<br>If you click in, the very top shows when that guide was made.</p>
 </blockquote>
 ]]></content>
       <categories>
@@ -16,10 +55,40 @@
       <tags>
         <tag>linux</tag>
         <tag>lfs</tag>
-        <tag>hobbyos</tag>
-        <tag>distro</tag>
-        <tag>planning</tag>
         <tag>project</tag>
+        <tag>hobbyos</tag>
+        <tag>planning</tag>
+        <tag>distro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Motivation and Rough Planning</title>
+    <url>/hamman-tech/Projects/HobbyOS/Motivation_and_rough_planning/</url>
+    <content><![CDATA[<h1 id="Initial-Remarks"><a href="#Initial-Remarks" class="headerlink" title="Initial Remarks"></a>Initial Remarks</h1><p>Even though this is a bit off topic, this is pretty much my first actual post on this blog. I know the KalmarCTF one was before this but I made that thing a while ago so this is my first post made FOR this blog. It’s also the first project I’ll be fully documenting on this blog. Also, sorry if this post isn’t very structured. I’m still new to writing these blog posts. I’m sure I’ll get better at it as I make more posts.</p>
+<h1 id="Motivations"><a href="#Motivations" class="headerlink" title="Motivations"></a>Motivations</h1><p>Alright guys, so I’ve known about LFS(Linux From Scratch) and BLFS(Beyong LFS) for quite a bit and since I’m also planning this summer to configure and move to Gentoo as my daily drive on my main laptop, I was just like hmmmmm, what if I also just made a fun LFS build just to learn a bit more about how linux works. Later on, I realized that I could make it a bit polished with BLFS and swaywm to it and rice it a little to make it a full hobby distro. </p>
+<p>After brainstorming it a bit, I thought that it would be cool that since I’m interested in cybersecurity and specifically pwn and rev, to just make a minimal linux distro with some tools and stuff already made. I’m sure somebody else has already done this type of stuff, but it’s really just for my understanding of linux and also to have some fun with it. </p>
+<p>That is literally the entire reason why I’m doing this lmaoooo💀💀. Maybe I’ll think of some more grand reason later on when I finish the distro and make a page for it.</p>
+<h1 id="Rough-Plan"><a href="#Rough-Plan" class="headerlink" title="Rough Plan"></a>Rough Plan</h1><p>I already finished making the html pages for LFS and BLFS(holy shit it is long). As you can tell from the top, this post is made on May 24 and I really only plan on actually following the LFS and stuff in the Summer. I also got exams as well, so I’ll only be able to actually do stuff once school ends. From now till then, I’ll just try to read over the LFS to get a good idea of what it is doing. </p>
+<p>Later, I’ll configure the LFS first by following the guide. As of now, I still don’t know jack about how it’s going to go so I can’t really say any specific thing but I’ll just follow the LFS to get a base CLI distro then I’ll follow the BLFS to get a swaywm thing on top. I honestly can NOT bother with GNOME or KDE stuff. I have a feeling that the apps and dependencies that come with those would kill me before I make a full distro. </p>
+<p>After the initial configuration, I’ll make that into an iso to understand how that process works. </p>
+<p>Then, I’ll go back and this time, I’ll diverge from the main LFS guide and install OPENRC as my init. Probably with some help from some AI and random geniuses in Discord groups I’m in.</p>
+<h1 id="Vision"><a href="#Vision" class="headerlink" title="Vision"></a>Vision</h1><p>So the vision is to obviously have a minimal distro with a minimal riced swaymd and a bunch of security features in the distro turned on. The init system will be OPENRC in the end and it’ll also come with some pwn and rev tools such as <code>gef</code> or <code>ghidra</code> or <code>binary ninja</code>. </p>
+<h1 id="Final-Stuff"><a href="#Final-Stuff" class="headerlink" title="Final Stuff"></a>Final Stuff</h1><p>I really have no idea how big of a project I’m getting myself into but I’m pretty exicted to get started. Yuuhhhhh, in these projects, I’ll also try to give myself some listed homework at the bottom to just keep myself on track. </p>
+<h3 id="Homework"><a href="#Homework" class="headerlink" title="Homework"></a>Homework</h3><ul>
+<li>Skim through LFS and BLFS guide to get a rough idea</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Projects</category>
+        <category>HobbyOS</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>lfs</tag>
+        <tag>hobbyos</tag>
+        <tag>planning</tag>
+        <tag>distro</tag>
+        <tag>projects</tag>
       </tags>
   </entry>
   <entry>
@@ -89,36 +158,6 @@
         <tag>ctf</tag>
         <tag>kalmarctf</tag>
         <tag>thoughts</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Motivation and Rough Planning</title>
-    <url>/hamman-tech/Projects/HobbyOS/Motivation_and_rough_planning/</url>
-    <content><![CDATA[<h1 id="Initial-Remarks"><a href="#Initial-Remarks" class="headerlink" title="Initial Remarks"></a>Initial Remarks</h1><p>Even though this is a bit off topic, this is pretty much my first actual post on this blog. I know the KalmarCTF one was before this but I made that thing a while ago so this is my first post made FOR this blog. It’s also the first project I’ll be fully documenting on this blog. Also, sorry if this post isn’t very structured. I’m still new to writing these blog posts. I’m sure I’ll get better at it as I make more posts.</p>
-<h1 id="Motivations"><a href="#Motivations" class="headerlink" title="Motivations"></a>Motivations</h1><p>Alright guys, so I’ve known about LFS(Linux From Scratch) and BLFS(Beyong LFS) for quite a bit and since I’m also planning this summer to configure and move to Gentoo as my daily drive on my main laptop, I was just like hmmmmm, what if I also just made a fun LFS build just to learn a bit more about how linux works. Later on, I realized that I could make it a bit polished with BLFS and swaywm to it and rice it a little to make it a full hobby distro. </p>
-<p>After brainstorming it a bit, I thought that it would be cool that since I’m interested in cybersecurity and specifically pwn and rev, to just make a minimal linux distro with some tools and stuff already made. I’m sure somebody else has already done this type of stuff, but it’s really just for my understanding of linux and also to have some fun with it. </p>
-<p>That is literally the entire reason why I’m doing this lmaoooo💀💀. Maybe I’ll think of some more grand reason later on when I finish the distro and make a page for it.</p>
-<h1 id="Rough-Plan"><a href="#Rough-Plan" class="headerlink" title="Rough Plan"></a>Rough Plan</h1><p>I already finished making the html pages for LFS and BLFS(holy shit it is long). As you can tell from the top, this post is made on May 24 and I really only plan on actually following the LFS and stuff in the Summer. I also got exams as well, so I’ll only be able to actually do stuff once school ends. From now till then, I’ll just try to read over the LFS to get a good idea of what it is doing. </p>
-<p>Later, I’ll configure the LFS first by following the guide. As of now, I still don’t know jack about how it’s going to go so I can’t really say any specific thing but I’ll just follow the LFS to get a base CLI distro then I’ll follow the BLFS to get a swaywm thing on top. I honestly can NOT bother with GNOME or KDE stuff. I have a feeling that the apps and dependencies that come with those would kill me before I make a full distro. </p>
-<p>After the initial configuration, I’ll make that into an iso to understand how that process works. </p>
-<p>Then, I’ll go back and this time, I’ll diverge from the main LFS guide and install OPENRC as my init. Probably with some help from some AI and random geniuses in Discord groups I’m in.</p>
-<h1 id="Vision"><a href="#Vision" class="headerlink" title="Vision"></a>Vision</h1><p>So the vision is to obviously have a minimal distro with a minimal riced swaymd and a bunch of security features in the distro turned on. The init system will be OPENRC in the end and it’ll also come with some pwn and rev tools such as <code>gef</code> or <code>ghidra</code> or <code>binary ninja</code>. </p>
-<h1 id="Final-Stuff"><a href="#Final-Stuff" class="headerlink" title="Final Stuff"></a>Final Stuff</h1><p>I really have no idea how big of a project I’m getting myself into but I’m pretty exicted to get started. Yuuhhhhh, in these projects, I’ll also try to give myself some listed homework at the bottom to just keep myself on track. </p>
-<h3 id="Homework"><a href="#Homework" class="headerlink" title="Homework"></a>Homework</h3><ul>
-<li>Skim through LFS and BLFS guide to get a rough idea</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Projects</category>
-        <category>HobbyOS</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>lfs</tag>
-        <tag>hobbyos</tag>
-        <tag>distro</tag>
-        <tag>projects</tag>
-        <tag>planning</tag>
       </tags>
   </entry>
 </search>
