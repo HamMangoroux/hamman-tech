@@ -9,17 +9,17 @@
 <h1 id="Some-resources"><a href="#Some-resources" class="headerlink" title="Some resources"></a>Some resources</h1><p>Here’s the documentation for pwntools: <a href="https://docs.pwntools.com/en/latest/">Pwntools Docs</a></p>
 <p>Here’s the badge lab page on pwn.college: <a href="https://pwn.college/pwntools~9b09c9dc/">Pwntools Tutorials Badge</a></p>
 <p>And of course, here’s a screenshot of the badge: </p>
-<img src="/images/pwntoolsbadge.png" width="200">
+<img src="/source/images/pwntoolsbadge.png" width="200">
 ]]></content>
       <categories>
         <category>Pwn.College</category>
         <category>Badges</category>
       </categories>
       <tags>
-        <tag>thoughts</tag>
         <tag>pwncollege</tag>
         <tag>badges</tag>
         <tag>learning</tag>
+        <tag>thoughts</tag>
       </tags>
   </entry>
   <entry>
@@ -58,10 +58,10 @@
         <category>KalmarCTF</category>
       </categories>
       <tags>
+        <tag>thoughts</tag>
         <tag>competition</tag>
         <tag>ctf</tag>
         <tag>kalmarctf</tag>
-        <tag>thoughts</tag>
       </tags>
   </entry>
   <entry>
