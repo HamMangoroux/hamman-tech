@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Pwntools Tutorials Badge</title>
+    <url>/hamman-tech/Pwn.College/Badges/Pwntools_Tutorials/</url>
+    <content><![CDATA[<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>I originally wanted to work through the pwntools tutorials badge just because I didn’t really know a whole lot about pwntools scripting. I’m still working my way through white belt material, so I just thought that learning pwntools would be pretty useful.</p>
+<h1 id="Thoughts"><a href="#Thoughts" class="headerlink" title="Thoughts"></a>Thoughts</h1><p>It is a really nice couple of challenges that taught a lot of the basics. I wasn’t expecting anything too hard since I was already semi-comfortable with the very very basics of using the pwntools library. It was really just a way for me to refresh my memory on it. </p>
+<p>I also didn’t use AI through it all because what’s the point. I do admit that sometimes, I use AI to answer basic questions during other CTF competitions, but my whole approach to learning cybersecurity is to just minimize the AI use when I’m still learning hte fundementals. </p>
+<h1 id="Some-resources"><a href="#Some-resources" class="headerlink" title="Some resources"></a>Some resources</h1><p>Here’s the documentation for pwntools: <a href="https://docs.pwntools.com/en/latest/">Pwntools Docs</a></p>
+<p>Here’s the badge lab page on pwn.college: <a href="https://pwn.college/pwntools~9b09c9dc/">Pwntools Tutorials Badge</a></p>
+<p>And of course, here’s a screenshot of the badge: </p>
+<img src="./images/pwntoolsbadge.png" width="200">
+]]></content>
+      <categories>
+        <category>Pwn.College</category>
+        <category>Badges</category>
+      </categories>
+      <tags>
+        <tag>thoughts</tag>
+        <tag>pwncollege</tag>
+        <tag>badges</tag>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LFS_Book_Copy</title>
     <url>/hamman-tech/Projects/HobbyOS/LFS_Book_Copy/</url>
     <content><![CDATA[<h1 id="Meaning"><a href="#Meaning" class="headerlink" title="Meaning"></a>Meaning</h1><p>WHATEVER IS THE MEANING FOR THIS POST. Uh it’s really more for me than anything, but I’m keeping a copy of the guides I’m following in my website. Also just to document every part of the project and stuff. YUH. </p>
@@ -154,10 +176,10 @@
       <tags>
         <tag>linux</tag>
         <tag>lfs</tag>
+        <tag>project</tag>
         <tag>hobbyos</tag>
         <tag>planning</tag>
         <tag>distro</tag>
-        <tag>projects</tag>
       </tags>
   </entry>
 </search>
