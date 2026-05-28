@@ -9,7 +9,7 @@
 <h1 id="Some-resources"><a href="#Some-resources" class="headerlink" title="Some resources"></a>Some resources</h1><p>Here’s the documentation for pwntools: <a href="https://docs.pwntools.com/en/latest/">Pwntools Docs</a></p>
 <p>Here’s the badge lab page on pwn.college: <a href="https://pwn.college/pwntools~9b09c9dc/">Pwntools Tutorials Badge</a></p>
 <p>And of course, here’s a screenshot of the badge: </p>
-<img src="/source/images/pwntoolsbadge.png" width="200">
+
 ]]></content>
       <categories>
         <category>Pwn.College</category>
