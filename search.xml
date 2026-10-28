@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>/hamman-tech/Projects/FPGA/first_day_with_fpga/</url>
+    <content><![CDATA[<hr>
+<hr>
+<h1 id="FIRST-FPGA"><a href="#FIRST-FPGA" class="headerlink" title="FIRST FPGA"></a>FIRST FPGA</h1><p>So before I said I might have gotten an internship at terasic fpga. Well I DO and today I was sent my first fpga, the DE25-Nano. Right after I got it, I started tweaking with it for hourse and went down a small rabbit hole figuring out I2C and the switches and whatnot. So pretty much I got a couple of demo projects already and I just randomly chose the Board_Info_RTL and loaded the fpga for the first time!!! I still have the output from that here:</p>
+<figure class="highlight zsh"><table><tr><td class="code"><pre><span class="line">$ quartus_pgm -c 1 -m jtag -o <span class="string">&quot;p;golden_top.sof&quot;</span></span><br><span class="line">Info (213045): Using programming cable <span class="string">&quot;DE25-Nano [3-5-iface0]&quot;</span></span><br><span class="line">Info (213011): Using programming file golden_top.sof with checksum 0x06106D74 <span class="keyword">for</span> device A5EB013BB23BCS@1</span><br><span class="line">Info (209060): Started Programmer operation at Wed Oct 28 21:12:22 2026</span><br><span class="line">Info (18942): Configuring device index 1</span><br><span class="line">Info (18943): Configuration succeeded at device index 1</span><br><span class="line">Info (209011): Successfully performed operation(s)</span><br><span class="line">Info (209061): Ended Programmer operation at Wed Oct 28 21:12:24 2026</span><br><span class="line">Info: Quartus Prime Programmer was successful. 0 errors, 0 warnings</span><br></pre></td></tr></table></figure>
+<p>October 28, 2026, 21:12:24</p>
+<p>Pretty neat. </p>
+<p>Afterwards I tried to modify the verilog file to give manual control over the fan with the switches and also show the state of the switch with the LEDs and stuff.<br>I stil haven’t gotten the manual control over the fans working yet but I already spent 3 hours and I still got physics and calc bc homework so MAYBE ANOTHER TIME. At least the LEDs worked. I really just wanted to post my first time loading an fpga because I feel like a lot of times, I forget to record something until after it’s done and I don’t have the actual record of it. </p>
+<p>This literally feels like the first wooden pickaxe you craft in minecraft.</p>
+]]></content>
+  </entry>
+  <entry>
     <title>ACTUAL START</title>
     <url>/hamman-tech/Projects/HobbyOS/ACTUAL_START/</url>
     <content><![CDATA[<h1 id="LITTLE-UPDATE"><a href="#LITTLE-UPDATE" class="headerlink" title="LITTLE UPDATE"></a>LITTLE UPDATE</h1><p>Alright so the reason I haven’t really been updating this blog is that I lost my secondary laptop’s password and the directory containing all the blog information was there so yeah pretty tragic. I’m now going to be updating this somewhat regularly though (hopefully). I know I already changed this project a bunch, but I just keep digging deeper into the OSdev rabbit hole and now I’m getting completely drawn to the idea of a riscv64 microkernel and working towards a working OS with a simple shell. Also, this article will just be a short update. </p>
@@ -24,6 +37,32 @@
         <tag>planning</tag>
         <tag>riscv</tag>
         <tag>low_level</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HITCON 2026</title>
+    <url>/hamman-tech/Events/HITCON_2026/</url>
+    <content><![CDATA[<h1 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h1><p>Alright so first a little update I kind of forgot to update this blog and it is currently the second day of the event. I should be updating the Kernel project soon. I also really need to start locking in on that. </p>
+<h1 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h1><p>So for the first day, I arrived onto the event location, attended the openning ceremony, and then started visiting the booths. Some standout booths were the CSCS(volunteering), AIS3, and B-Sides Tokyo. For the CSCS, at least from what they said, they’re basically doing the things that I’m already doing like pushing for open technology like Signal, Linux, wireguard, and stuff like that. And their targets are just peoppe who would be less tech literate like the elderly and younger kids. It also aims to foster interest in cybersecurity and open technology as a whole. I added their Signal so I might be doing these volunteering things later on. Of course, I’ll try to update this blog about it. For AIS3, it just stood out to me because it’s the summer camp that didn’t accept me because I wasn’t a Taiwanese citizen. I completely get it since it’s a government-funded program but still man I wanted to go. It seems like such a cool opportunity. Anyways, the third one is B-Sides Tokyo because they had a mini CTF challenge to get their stickers. </p>
+<p>I think more than any booths or talks, the thing that stood out to me the most HAS to be the sheer number of people who are just like me. It’s honestly kind of surreal seeing a room full of people with their terminals open on linux and everybody discussing about RCEs, shitting on Windows, and all deeply passionate about cybersecurity and open tech. This whole environment just makes me feel completely at home. Not really related, but everybody is so shamelessly themselves in a good way. A good example of this would be the people’s anime wallpapers lmao. </p>
+<p>In the afternoon, I went to listen to these talks:</p>
+<ul>
+<li><a href="https://hitcon.org/2026/en-US/agenda/ac816b95-ad14-46d7-b5c2-4964e0aaf132/">UnPwn2Own Berlin 2026 &#x2F; $70,000 Agent2Shell: Pre-Prompt RCEs in Claude Code, Cursor, and Gemini</a></li>
+<li><a href="https://hitcon.org/2026/en-US/agenda/700b0ffa-5598-4408-b655-d79385236ff7/">Vulnerabilities Assembled! The Vulnerability Factory Inside the Windows Kernel</a></li>
+<li><a href="https://hitcon.org/2026/en-US/agenda/5d1e2daf-df63-4767-836d-8cf517903953/">Keychained Melody - Grabbing the Keys to the iCloud Kingdom</a></li>
+<li><a href="https://hitcon.org/2026/en-US/agenda/d325bec3-8759-454c-9e3e-8516f6e2a026/">Harmonizing AI Agents and Human Analysts in CTI - Are CTI Agents Friends or Rivals to Junior Analyst</a></li>
+</ul>
+<p>These were all really interesting, but I couldn’t take any notes because all my devices were out of juice and I forgot to bring my power banks.<br>Even though I didn’t fully understand a lot of these talks, I think that the most interesting ones were definitely the Pre-Prompt RCEs in Claude Code, Cursor, and Gemini. I have linking the conference talk notes)<br>These were all really interesting, but I couldn’t take any notes because all my devices were out of juice and I forgot to bring my power banks.<br>Even though I didn’t fully understand a lot of these talks, I think that the most interesting ones were definitely the Pre-Prompt RCEs in Claude Code, Cursor, and Gemini(I will be linking the conference talk notes at the end of this article). What I found interesting was the general direction Mr. Tsuji chose to go. When people talk about AI security or AI CVEs, people usually think about prompt injection and trying to find exploits within the LLM. Instead, Mr. Tsuji chose to look in a larger scale and tried to find vulnerabilities from the AI agent’s permissions. Even though it is absoltely NOT a simple process, I was still surprised that these companies developing these AI agents didn’t catch onto these. The main issues are that these agents ask for permissions once and then the whole process gets root access basically forever. This is why those one or double click RCEs are possible. I think this problem ties into a bigger problem of people giving too much trust into AI. </p>
+<p>Even though Mr. Tsuji’s talk was the most interesting for me, the talk that is actually most relevant to me would actually be the one on Harmonizing AI Agents. This is because in the talk, he pointed out the glaring issue in the whole software industry right now which is of AI replacing junior roles leading to the lack of senior talent in the future. The reason it is relevant to me is because I plan to go into the cybersecurity industry and the way companies are being recommended to use AI are very important. His talk also details how people should be using AI to learn about cybersecurity, so that part is also relevant for me as it shows how to improve at a faster pace. </p>
+<p>IT IS AN ABSOLUTE SHAMEEE</p>
+]]></content>
+      <categories>
+        <category>Events</category>
+      </categories>
+      <tags>
+        <tag>Event</tag>
+        <tag>HITCON</tag>
+        <tag>Conference</tag>
       </tags>
   </entry>
   <entry>
@@ -191,29 +230,6 @@
         <tag>ctf</tag>
         <tag>kalmarctf</tag>
       </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/hamman-tech/Events/HITCON_2026/</url>
-    <content><![CDATA[<hr>
-<p>title: HITCON 2026<br>tags:<br>    - Event<br>    - HITCON<br>    - Conference<br>categories:<br>- Events</p>
-<hr>
-<h1 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h1><p>Alright so first a little update I kind of forgot to update this blog and it is currently the second day of the event. I should be updating the Kernel project soon. I also really need to start locking in on that. </p>
-<h1 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h1><p>So for the first day, I arrived onto the event location, attended the openning ceremony, and then started visiting the booths. Some standout booths were the CSCS(volunteering), AIS3, and B-Sides Tokyo. For the CSCS, at least from what they said, they’re basically doing the things that I’m already doing like pushing for open technology like Signal, Linux, wireguard, and stuff like that. And their targets are just peoppe who would be less tech literate like the elderly and younger kids. It also aims to foster interest in cybersecurity and open technology as a whole. I added their Signal so I might be doing these volunteering things later on. Of course, I’ll try to update this blog about it. For AIS3, it just stood out to me because it’s the summer camp that didn’t accept me because I wasn’t a Taiwanese citizen. I completely get it since it’s a government-funded program but still man I wanted to go. It seems like such a cool opportunity. Anyways, the third one is B-Sides Tokyo because they had a mini CTF challenge to get their stickers. </p>
-<p>I think more than any booths or talks, the thing that stood out to me the most HAS to be the sheer number of people who are just like me. It’s honestly kind of surreal seeing a room full of people with their terminals open on linux and everybody discussing about RCEs, shitting on Windows, and all deeply passionate about cybersecurity and open tech. This whole environment just makes me feel completely at home. Not really related, but everybody is so shamelessly themselves in a good way. A good example of this would be the people’s anime wallpapers lmao. </p>
-<p>In the afternoon, I went to listen to these talks:</p>
-<ul>
-<li><a href="https://hitcon.org/2026/en-US/agenda/ac816b95-ad14-46d7-b5c2-4964e0aaf132/">UnPwn2Own Berlin 2026 &#x2F; $70,000 Agent2Shell: Pre-Prompt RCEs in Claude Code, Cursor, and Gemini</a></li>
-<li><a href="https://hitcon.org/2026/en-US/agenda/700b0ffa-5598-4408-b655-d79385236ff7/">Vulnerabilities Assembled! The Vulnerability Factory Inside the Windows Kernel</a></li>
-<li><a href="https://hitcon.org/2026/en-US/agenda/5d1e2daf-df63-4767-836d-8cf517903953/">Keychained Melody - Grabbing the Keys to the iCloud Kingdom</a></li>
-<li><a href="https://hitcon.org/2026/en-US/agenda/d325bec3-8759-454c-9e3e-8516f6e2a026/">Harmonizing AI Agents and Human Analysts in CTI - Are CTI Agents Friends or Rivals to Junior Analyst</a></li>
-</ul>
-<p>These were all really interesting, but I couldn’t take any notes because all my devices were out of juice and I forgot to bring my power banks.<br>Even though I didn’t fully understand a lot of these talks, I think that the most interesting ones were definitely the Pre-Prompt RCEs in Claude Code, Cursor, and Gemini. I will be linking the conference talk notes at the end of this article)<br>These were all really interesting, but I couldn’t take any notes because all my devices were out of juice and I forgot to bring my power banks.<br>Even though I didn’t fully understand a lot of these talks, I think that the most interesting ones were definitely the Pre-Prompt RCEs in Claude Code, Cursor, and Gemini(I will be linking the conference talk notes at the end of this article). What I found interesting was the general direction Mr. Tsuji chose to go. When people talk about AI security or AI CVEs, people usually think about prompt injection and trying to find exploits within the LLM. Instead, Mr. Tsuji chose to look in a larger scale and tried to find vulnerabilities from the AI agent’s permissions. Even though it is absoltely NOT a simple process, I was still surprised that these companies developing these AI agents didn’t catch onto these. The main issues are that these agents ask for permissions once and then the whole process gets root access basically forever. This is why those one or double click RCEs are possible. I think this problem ties into a bigger problem of people giving too much trust into AI. </p>
-<p>Even though Mr. Tsuji’s talk was the most interesting for me, the talk that is actually most relevant to me would actually be the one on Harmonizing AI Agents. This is because in the talk, he pointed out the glaring issue in the whole software industry right now which is of AI replacing junior roles leading to the lack of senior talent in the future. The reason it is relevant to me is because I plan to go into the cybersecurity industry and the way companies are being recommended to use AI are very important. His talk also details how people should be using AI to learn about cybersecurity, so that part is also relevant for me as it shows how to improve at a faster pace. </p>
-]]></content>
-      <categories>
-        <category>Events</category>
-      </categories>
   </entry>
   <entry>
     <title>Pwntools Tutorials Badge</title>
