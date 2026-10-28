@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
+    <title>FIRST FPGA</title>
     <url>/hamman-tech/Projects/FPGA/first_day_with_fpga/</url>
-    <content><![CDATA[<hr>
-<hr>
-<h1 id="FIRST-FPGA"><a href="#FIRST-FPGA" class="headerlink" title="FIRST FPGA"></a>FIRST FPGA</h1><p>So before I said I might have gotten an internship at terasic fpga. Well I DO and today I was sent my first fpga, the DE25-Nano. Right after I got it, I started tweaking with it for hourse and went down a small rabbit hole figuring out I2C and the switches and whatnot. So pretty much I got a couple of demo projects already and I just randomly chose the Board_Info_RTL and loaded the fpga for the first time!!! I still have the output from that here:</p>
+    <content><![CDATA[<h1 id="FIRST-FPGA"><a href="#FIRST-FPGA" class="headerlink" title="FIRST FPGA"></a>FIRST FPGA</h1><p>So before I said I might have gotten an internship at terasic fpga. Well I DO and today I was sent my first fpga, the DE25-Nano. Right after I got it, I started tweaking with it for hourse and went down a small rabbit hole figuring out I2C and the switches and whatnot. So pretty much I got a couple of demo projects already and I just randomly chose the Board_Info_RTL and loaded the fpga for the first time!!! I still have the output from that here:</p>
 <figure class="highlight zsh"><table><tr><td class="code"><pre><span class="line">$ quartus_pgm -c 1 -m jtag -o <span class="string">&quot;p;golden_top.sof&quot;</span></span><br><span class="line">Info (213045): Using programming cable <span class="string">&quot;DE25-Nano [3-5-iface0]&quot;</span></span><br><span class="line">Info (213011): Using programming file golden_top.sof with checksum 0x06106D74 <span class="keyword">for</span> device A5EB013BB23BCS@1</span><br><span class="line">Info (209060): Started Programmer operation at Wed Oct 28 21:12:22 2026</span><br><span class="line">Info (18942): Configuring device index 1</span><br><span class="line">Info (18943): Configuration succeeded at device index 1</span><br><span class="line">Info (209011): Successfully performed operation(s)</span><br><span class="line">Info (209061): Ended Programmer operation at Wed Oct 28 21:12:24 2026</span><br><span class="line">Info: Quartus Prime Programmer was successful. 0 errors, 0 warnings</span><br></pre></td></tr></table></figure>
 <p>October 28, 2026, 21:12:24</p>
 <p>Pretty neat. </p>
 <p>Afterwards I tried to modify the verilog file to give manual control over the fan with the switches and also show the state of the switch with the LEDs and stuff.<br>I stil haven’t gotten the manual control over the fans working yet but I already spent 3 hours and I still got physics and calc bc homework so MAYBE ANOTHER TIME. At least the LEDs worked. I really just wanted to post my first time loading an fpga because I feel like a lot of times, I forget to record something until after it’s done and I don’t have the actual record of it. </p>
 <p>This literally feels like the first wooden pickaxe you craft in minecraft.</p>
 ]]></content>
+      <categories>
+        <category>Projects</category>
+        <category>FPGA</category>
+      </categories>
+      <tags>
+        <tag>fpga</tag>
+        <tag>verilog</tag>
+      </tags>
   </entry>
   <entry>
     <title>ACTUAL START</title>
@@ -157,8 +163,8 @@
         <category>6th_Hackathon_Taiwan</category>
       </categories>
       <tags>
-        <tag>hackathon</tag>
         <tag>competition</tag>
+        <tag>hackathon</tag>
         <tag>sixth_taiwan_hackathon_junior</tag>
       </tags>
   </entry>
